@@ -43,6 +43,9 @@
     
 
 }
+.toplistitem:hover{
+    color: gray;
+}
 .topicon{
     margin-right: 20px;
     font-size: 18px;

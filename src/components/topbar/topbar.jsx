@@ -1,6 +1,8 @@
 import "./topbarCss.css"
+import {Link} from "react-router-dom";
 import image from '../images/profile.jpg';
 export default function TopBar() {
+  const user=false;
   return (
     <div className="top">
       <div className="left">
@@ -13,15 +15,27 @@ export default function TopBar() {
 
       <div className="centre">
         <ul className="toplist">
-             <li className="toplistitem">HOME</li>
-             <li className="toplistitem">ABOUT</li>
-             <li className="toplistitem">CONTACT</li>
-             <li className="toplistitem">WRITE</li>
-             <li className="toplistitem">LOGOUT</li>
+             <li className="toplistitem">
+              <Link className="link" to="/" >HOME</Link>
+             </li>
+             <li className="toplistitem"><Link className="link" to="/" >ABOUT</Link></li>
+             <li className="toplistitem"><Link className="link" to="/" >CONTACT</Link></li>
+             <li className="toplistitem"><Link className="link" to="/write" >WRITE</Link></li>
+             <li className="toplistitem">{user && "LOGOUT"}</li>
         </ul>
         </div>
       <div className="right">
-      <img className="topimage" src={image} alt="loading..." />
+        {
+          user?(
+            <img className="topimage" src={image} alt="loading..." />
+          ):(
+             <ul className="toplist">
+            <li className="toplistitem"><Link className="link" to="/login" >LOGIN</Link></li>
+            <li className="toplistitem"><Link className="link" to="/register" >REGISTER</Link></li>
+            </ul>
+          )
+        }
+      
       <i className="search fa-solid fa-magnifying-glass"></i>
       </div>
     </div>

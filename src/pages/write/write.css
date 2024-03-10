@@ -1,0 +1,72 @@
+.write{
+    margin: 50px;
+    
+    
+}
+
+.writeform{
+  position: relative;
+}
+
+.writeformgroup{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.writeicon{
+    height: 30px;
+    width: 30px;
+    border-radius: 20%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.writeinput{
+    font-size: 30px;
+    padding: 20px;
+    width: 70%;
+    margin: 20px;
+    border: none;
+}
+
+.writeinput:focus{
+    outline:none
+}
+
+.writetext{
+    font-size: 20px;
+    height: 100vh;
+}
+
+.writesubmit{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    color: white;
+    background-color: teal;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.writesubmit:hover{
+    background-color: rgb(36, 134, 77);
+}
+
+.writeImage{
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

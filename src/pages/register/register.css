@@ -1,0 +1,70 @@
+.register{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+   width: 100%;
+    justify-content: center;
+    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)) ,url("../../components/images/header.png");
+    cursor: auto;
+}
+
+.registerform{
+    color: black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+.registertitle{
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 50px;
+}
+
+.registerform>label{
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 20px;
+}
+
+.registerform>input{
+    font-size: 14px;
+    padding: 5px;
+    width: 30%;
+    border: none;
+}
+
+.registersubmit{
+    
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(124, 82, 6);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    width:10%
+}
+.registersubmit:hover{
+    background-color: rgba(122, 83, 12, 0.564);
+}
+.registerlogin{
+    position: absolute;
+    top:70px;
+    right:30px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(124, 82, 6);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.registerlogin:hover{
+    background-color: rgba(122, 83, 12, 0.564);
+}
