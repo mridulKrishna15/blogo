@@ -5,7 +5,9 @@
 .singlepostWrapper{
     
     margin-top: 30px;
-  
+    display: flex;
+    flex-direction: column;
+
 }
 .singlepostImage{
     width: 100%;
@@ -13,10 +15,25 @@
     border-radius: 20px;
 }
 .singlepostTitle{
+    font-size: 26px;
     text-align: center;
     margin: 25px;
     font-family:  "Josefin Sans", sans-serif;
 
+}
+.singlepostTitleInput{
+    font-size: 26px;
+    text-align: center;
+    margin: 25px;
+    padding: 5px;
+    font-family:  "Josefin Sans", sans-serif;
+    border:none;
+    color: gray;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.286);
+
+}
+.singlepostTitleInput:focus{
+    outline:none;
 }
 .singlepostEdit{
     float: right;
@@ -51,4 +68,32 @@
     font-size: 30px;
     font-weight: 600;
     color: brown;
+}
+
+.singlepostDescInput{
+    border: none;
+    margin-top: 50px;
+    font-size: 14px;
+    font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+
+}
+
+.singlepostDescInput:focus{
+  outline: none;
+}
+
+.singlePostButton{
+    border: none;
+    background-color: rgb(20, 71, 54);
+    padding: 7px;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    font-family: "Varela Round", sans-serif;
+    margin-top: 30px;
+    
 }
